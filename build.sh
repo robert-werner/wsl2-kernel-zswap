@@ -38,7 +38,7 @@ Next, copy "arch/x86/boot/bzImage" to "/mnt/c" and
 add the following to your ".wslconfig".
 
 [wsl2]
-kernel=C:\\bzImage
+kernel=C:\\\\bzImage
 
 After that, restart your WSL2 instance by executing 
 "wsl --shutdown" and then reopening your WSL2 terminal.
