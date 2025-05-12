@@ -18,6 +18,11 @@ cd "WSL2-Linux-Kernel-linux-msft-wsl-${WSL2_KERNEL_VERSION}"
 cp Microsoft/config-wsl .config           # Use WSL default kernel config as the base
 cat << EOF >> .config
 
+CONFIG_KSM=y
+CONFIG_TRANSPARENT_HUGEPAGE=y
+CONFIG_ZSWAP=y
+CONFIG_Z3FOLD=y
+CONFIG_SCHED_BORE=y
 CONFIG_FRONTSWAP=y
 CONFIG_ZSWAP=y
 CONFIG_ZSWAP_COMPRESSOR_DEFAULT_LZO=y
