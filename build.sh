@@ -6,7 +6,7 @@ set -e
 set -o pipefail
 
 sudo apt update
-sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev autoconf libudev-dev libtool dwarves
+sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev autoconf libudev-dev libtool dwarves make cmake ccache
 
 WSL2_KERNEL_VERSION="$(uname -r | grep -o '^[0-9\.]\+')"
 
