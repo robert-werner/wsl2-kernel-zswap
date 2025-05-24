@@ -11,7 +11,7 @@ sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev
 WSL2_KERNEL_VERSION="$(uname -r | grep -o '^[0-9\.]\+')"
 
 wget -c https://github.com/microsoft/WSL2-Linux-Kernel/archive/refs/tags/linux-msft-wsl-${WSL2_KERNEL_VERSION}.tar.gz
-tar xvf linux-msft-wsl-${WSL2_KERNEL_VERSION}.tar.gz
+tar -xvf linux-msft-wsl-${WSL2_KERNEL_VERSION}.tar.gz
 
 cd "WSL2-Linux-Kernel-linux-msft-wsl-${WSL2_KERNEL_VERSION}"
 
